@@ -67,29 +67,33 @@ int main(int argc, char * argv[]) {
 
   std::cout << "CLIENT STARTED:" << std::endl;
 
-  std::cout << "Establishing control channel... " << std::flush;
-  RequestChannel chan("control", RequestChannel::Side::CLIENT);
-  std::cout << "done." << std::endl;
-
   /* -- Start sending a sequence of requests */
 
-  std::string reply1 = chan.send_request("hello");
-  std::cout << "Reply to request 'hello' is '" << reply1 << "'" << std::endl;
+  if (fork() == 0) {
+    execve("dataserver", NULL, NULL);
+  } else {
+    std::cout << "Establishing control channel... " << std::flush;
+    RequestChannel chan("control", RequestChannel::Side::CLIENT);
+    std::cout << "done." << std::endl;
 
-  std::string reply2 = chan.send_request("data Joe Smith");
-  std::cout << "Reply to request 'data Joe Smith' is '" << reply2 << "'" << std::endl;
+    std::string reply1 = chan.send_request("hello");
+    std::cout << "Reply to request 'hello' is '" << reply1 << "'" << std::endl;
 
-  std::string reply3 = chan.send_request("data Jane Smith");
-  std::cout << "Reply to request 'data Jane Smith' is '" << reply3 << "'" << std::endl;
+    std::string reply2 = chan.send_request("data Joe Smith");
+    std::cout << "Reply to request 'data Joe Smith' is '" << reply2 << "'" << std::endl;
 
-  for(int i = 0; i < 100; i++) {
-    std::string request_string("data TestPerson" + int2string(i));
-    std::string reply_string = chan.send_request(request_string);
-    std::cout << "reply to request " << i << ":" << reply_string << std::endl;;
-  }
+    std::string reply3 = chan.send_request("data Jane Smith");
+    std::cout << "Reply to request 'data Jane Smith' is '" << reply3 << "'" << std::endl;
+
+    for(int i = 0; i < 100; i++) {
+      std::string request_string("data TestPerson" + int2string(i));
+      std::string reply_string = chan.send_request(request_string);
+      std::cout << "reply to request " << i << ":" << reply_string << std::endl;;
+    }
  
-  std::string reply4 = chan.send_request("quit");
-  std::cout << "Reply to request 'quit' is '" << reply4 << std::endl;
+    std::string reply4 = chan.send_request("quit");
+    std::cout << "Reply to request 'quit' is '" << reply4 << std::endl;
+  }
 
   usleep(1000000);
 }
