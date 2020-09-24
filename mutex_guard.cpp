@@ -51,9 +51,11 @@
 /*--------------------------------------------------------------------------*/
 
 MutexGuard::MutexGuard(Mutex &m) {
-
+    this->m = &m;
+    this->m->Lock();
 }
 
 MutexGuard::~MutexGuard() {
-
+    m->Unlock();
+    m = nullptr;
 }

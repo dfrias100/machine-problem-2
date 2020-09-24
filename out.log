@@ -1,0 +1,955 @@
+CLIENT STARTED:
+Establishing control channel... rqname = fifo_control1
+mkfifo read pipe fifo_control1
+open read pipe
+rqname = fifo_control1
+mkfifo write pipe fifo_control1
+open write pipe
+done opening write pipe
+rqname = fifo_control2
+mkfifo read pipe fifo_control2
+open read pipe
+done opening read pipe
+rqname = fifo_control2
+mkfifo write pipe fifo_control2
+open write pipe
+done opening write pipe
+done.
+Request Channel (control) writing [hello](control) done writing.
+done opening read pipe
+Reading next request from channel (control) ...Request Channel (control) reads [hello]
+ done (control).
+New request is hello
+Request Channel (control) writing [hello to you too](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [hello to you too]
+Reply to request 'hello' is 'hello to you too'
+Request Channel (control) writing [data Joe Smith](control) done writing.
+Request Channel (control) reads [data Joe Smith]
+ done (control).
+New request is data Joe Smith
+Request Channel (control) writing [83](control) done writing.
+Request Channel (control) reads [83]
+Reading next request from channel (control) ...Reply to request 'data Joe Smith' is '83'
+Request Channel (control) writing [data Jane Smith](control) done writing.
+Request Channel (control) reads [data Jane Smith]
+ done (control).
+New request is data Jane Smith
+Request Channel (control) writing [86](control) done writing.
+Request Channel (control) reads [86]
+Reading next request from channel (control) ...Reply to request 'data Jane Smith' is '86'
+Request Channel (control) writing [data TestPerson0](control) done writing.
+Request Channel (control) reads [data TestPerson0]
+ done (control).
+New request is data TestPerson0
+Request Channel (control) writing [77](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [77]
+Overhead for request 0: 0 seconds, 264 microseconds
+reply to request 0:77
+Request Channel (control) writing [data TestPerson1](control) done writing.
+Request Channel (control) reads [data TestPerson1]
+ done (control).
+New request is data TestPerson1
+Request Channel (control) writing [15](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [15]
+Overhead for request 1: 0 seconds, 193 microseconds
+reply to request 1:15
+Request Channel (control) writing [data TestPerson2](control) done writing.
+Request Channel (control) reads [data TestPerson2]
+ done (control).
+New request is data TestPerson2
+Request Channel (control) writing [93](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [93]
+Overhead for request 2: 0 seconds, 177 microseconds
+reply to request 2:93
+Request Channel (control) writing [data TestPerson3](control) done writing.
+Request Channel (control) reads [data TestPerson3]
+ done (control).
+New request is data TestPerson3
+Request Channel (control) writing [35](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [35]
+Overhead for request 3: 0 seconds, 154 microseconds
+reply to request 3:35
+Request Channel (control) writing [data TestPerson4](control) done writing.
+Request Channel (control) reads [data TestPerson4]
+ done (control).
+New request is data TestPerson4
+Request Channel (control) writing [86](control) done writing.
+Request Channel (control) reads [86]
+Reading next request from channel (control) ...Overhead for request 4: 0 seconds, 116 microseconds
+reply to request 4:86
+Request Channel (control) writing [data TestPerson5](control) done writing.
+Request Channel (control) reads [data TestPerson5]
+ done (control).
+New request is data TestPerson5
+Request Channel (control) writing [92](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [92]
+Overhead for request 5: 0 seconds, 122 microseconds
+reply to request 5:92
+Request Channel (control) writing [data TestPerson6](control) done writing.
+Request Channel (control) reads [data TestPerson6]
+ done (control).
+New request is data TestPerson6
+Request Channel (control) writing [49](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [49]
+Overhead for request 6: 0 seconds, 146 microseconds
+reply to request 6:49
+Request Channel (control) writing [data TestPerson7](control) done writing.
+Request Channel (control) reads [data TestPerson7]
+ done (control).
+New request is data TestPerson7
+Request Channel (control) writing [21](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [21]
+Overhead for request 7: 0 seconds, 104 microseconds
+reply to request 7:21
+Request Channel (control) writing [data TestPerson8](control) done writing.
+Request Channel (control) reads [data TestPerson8]
+ done (control).
+New request is data TestPerson8
+Request Channel (control) writing [62](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [62]
+Overhead for request 8: 0 seconds, 102 microseconds
+reply to request 8:62
+Request Channel (control) writing [data TestPerson9](control) done writing.
+Request Channel (control) reads [data TestPerson9]
+ done (control).
+New request is data TestPerson9
+Request Channel (control) writing [27](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [27]
+Overhead for request 9: 0 seconds, 142 microseconds
+reply to request 9:27
+Request Channel (control) writing [data TestPerson10](control) done writing.
+Request Channel (control) reads [data TestPerson10]
+ done (control).
+New request is data TestPerson10
+Request Channel (control) writing [90](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [90]
+Overhead for request 10: 0 seconds, 111 microseconds
+reply to request 10:90
+Request Channel (control) writing [data TestPerson11](control) done writing.
+Request Channel (control) reads [data TestPerson11]
+ done (control).
+New request is data TestPerson11
+Request Channel (control) writing [59](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [59]
+Overhead for request 11: 0 seconds, 108 microseconds
+reply to request 11:59
+Request Channel (control) writing [data TestPerson12](control) done writing.
+Request Channel (control) reads [data TestPerson12]
+ done (control).
+New request is data TestPerson12
+Request Channel (control) writing [63](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [63]
+Overhead for request 12: 0 seconds, 117 microseconds
+reply to request 12:63
+Request Channel (control) writing [data TestPerson13](control) done writing.
+Request Channel (control) reads [data TestPerson13]
+ done (control).
+New request is data TestPerson13
+Request Channel (control) writing [26](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [26]
+Overhead for request 13: 0 seconds, 107 microseconds
+reply to request 13:26
+Request Channel (control) writing [data TestPerson14](control) done writing.
+Request Channel (control) reads [data TestPerson14]
+ done (control).
+New request is data TestPerson14
+Request Channel (control) writing [40](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [40]
+Overhead for request 14: 0 seconds, 109 microseconds
+reply to request 14:40
+Request Channel (control) writing [data TestPerson15](control) done writing.
+Request Channel (control) reads [data TestPerson15]
+ done (control).
+New request is data TestPerson15
+Request Channel (control) writing [26](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [26]
+Overhead for request 15: 0 seconds, 108 microseconds
+reply to request 15:26
+Request Channel (control) writing [data TestPerson16](control) done writing.
+Request Channel (control) reads [data TestPerson16]
+ done (control).
+New request is data TestPerson16
+Request Channel (control) writing [72](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [72]
+Overhead for request 16: 0 seconds, 128 microseconds
+reply to request 16:72
+Request Channel (control) writing [data TestPerson17](control) done writing.
+Request Channel (control) reads [data TestPerson17]
+ done (control).
+New request is data TestPerson17
+Request Channel (control) writing [36](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [36]
+Overhead for request 17: 0 seconds, 128 microseconds
+reply to request 17:36
+Request Channel (control) writing [data TestPerson18](control) done writing.
+Request Channel (control) reads [data TestPerson18]
+ done (control).
+New request is data TestPerson18
+Request Channel (control) writing [11](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [11]
+Overhead for request 18: 0 seconds, 107 microseconds
+reply to request 18:11
+Request Channel (control) writing [data TestPerson19](control) done writing.
+Request Channel (control) reads [data TestPerson19]
+ done (control).
+New request is data TestPerson19
+Request Channel (control) writing [68](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [68]
+Overhead for request 19: 0 seconds, 100 microseconds
+reply to request 19:68
+Request Channel (control) writing [data TestPerson20](control) done writing.
+Request Channel (control) reads [data TestPerson20]
+ done (control).
+New request is data TestPerson20
+Request Channel (control) writing [67](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [67]
+Overhead for request 20: 0 seconds, 169 microseconds
+reply to request 20:67
+Request Channel (control) writing [data TestPerson21](control) done writing.
+Request Channel (control) reads [data TestPerson21]
+ done (control).
+New request is data TestPerson21
+Request Channel (control) writing [29](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [29]
+Overhead for request 21: 0 seconds, 109 microseconds
+reply to request 21:29
+Request Channel (control) writing [data TestPerson22](control) done writing.
+Request Channel (control) reads [data TestPerson22]
+ done (control).
+New request is data TestPerson22
+Request Channel (control) writing [82](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [82]
+Overhead for request 22: 0 seconds, 106 microseconds
+reply to request 22:82
+Request Channel (control) writing [data TestPerson23](control) done writing.
+Request Channel (control) reads [data TestPerson23]
+ done (control).
+New request is data TestPerson23
+Request Channel (control) writing [30](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [30]
+Overhead for request 23: 0 seconds, 104 microseconds
+reply to request 23:30
+Request Channel (control) writing [data TestPerson24](control) done writing.
+Request Channel (control) reads [data TestPerson24]
+ done (control).
+New request is data TestPerson24
+Request Channel (control) writing [62](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [62]
+Overhead for request 24: 0 seconds, 103 microseconds
+reply to request 24:62
+Request Channel (control) writing [data TestPerson25](control) done writing.
+Request Channel (control) reads [data TestPerson25]
+ done (control).
+New request is data TestPerson25
+Request Channel (control) writing [23](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [23]
+Overhead for request 25: 0 seconds, 119 microseconds
+reply to request 25:23
+Request Channel (control) writing [data TestPerson26](control) done writing.
+Request Channel (control) reads [data TestPerson26]
+ done (control).
+New request is data TestPerson26
+Request Channel (control) writing [67](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [67]
+Overhead for request 26: 0 seconds, 101 microseconds
+reply to request 26:67
+Request Channel (control) writing [data TestPerson27](control) done writing.
+Request Channel (control) reads [data TestPerson27]
+ done (control).
+New request is data TestPerson27
+Request Channel (control) writing [35](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [35]
+Overhead for request 27: 0 seconds, 124 microseconds
+reply to request 27:35
+Request Channel (control) writing [data TestPerson28](control) done writing.
+Request Channel (control) reads [data TestPerson28]
+ done (control).
+New request is data TestPerson28
+Request Channel (control) writing [29](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [29]
+Overhead for request 28: 0 seconds, 100 microseconds
+reply to request 28:29
+Request Channel (control) writing [data TestPerson29](control) done writing.
+Request Channel (control) reads [data TestPerson29]
+ done (control).
+New request is data TestPerson29
+Request Channel (control) writing [2](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [2]
+Overhead for request 29: 0 seconds, 102 microseconds
+reply to request 29:2
+Request Channel (control) writing [data TestPerson30](control) done writing.
+Request Channel (control) reads [data TestPerson30]
+ done (control).
+New request is data TestPerson30
+Request Channel (control) writing [22](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [22]
+Overhead for request 30: 0 seconds, 103 microseconds
+reply to request 30:22
+Request Channel (control) writing [data TestPerson31](control) done writing.
+Request Channel (control) reads [data TestPerson31]
+ done (control).
+New request is data TestPerson31
+Request Channel (control) writing [58](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [58]
+Overhead for request 31: 0 seconds, 123 microseconds
+reply to request 31:58
+Request Channel (control) writing [data TestPerson32](control) done writing.
+Request Channel (control) reads [data TestPerson32]
+ done (control).
+New request is data TestPerson32
+Request Channel (control) writing [69](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [69]
+Overhead for request 32: 0 seconds, 102 microseconds
+reply to request 32:69
+Request Channel (control) writing [data TestPerson33](control) done writing.
+Request Channel (control) reads [data TestPerson33]
+ done (control).
+New request is data TestPerson33
+Request Channel (control) writing [67](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [67]
+Overhead for request 33: 0 seconds, 101 microseconds
+reply to request 33:67
+Request Channel (control) writing [data TestPerson34](control) done writing.
+Request Channel (control) reads [data TestPerson34]
+ done (control).
+New request is data TestPerson34
+Request Channel (control) writing [93](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [93]
+Overhead for request 34: 0 seconds, 99 microseconds
+reply to request 34:93
+Request Channel (control) writing [data TestPerson35](control) done writing.
+Request Channel (control) reads [data TestPerson35]
+ done (control).
+New request is data TestPerson35
+Request Channel (control) writing [56](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [56]
+Overhead for request 35: 0 seconds, 100 microseconds
+reply to request 35:56
+Request Channel (control) writing [data TestPerson36](control) done writing.
+Request Channel (control) reads [data TestPerson36]
+ done (control).
+New request is data TestPerson36
+Request Channel (control) writing [11](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [11]
+Overhead for request 36: 0 seconds, 101 microseconds
+reply to request 36:11
+Request Channel (control) writing [data TestPerson37](control) done writing.
+Request Channel (control) reads [data TestPerson37]
+ done (control).
+New request is data TestPerson37
+Request Channel (control) writing [42](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [42]
+Overhead for request 37: 0 seconds, 135 microseconds
+reply to request 37:42
+Request Channel (control) writing [data TestPerson38](control) done writing.
+Request Channel (control) reads [data TestPerson38]
+ done (control).
+New request is data TestPerson38
+Request Channel (control) writing [29](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [29]
+Overhead for request 38: 0 seconds, 140 microseconds
+reply to request 38:29
+Request Channel (control) writing [data TestPerson39](control) done writing.
+Request Channel (control) reads [data TestPerson39]
+ done (control).
+New request is data TestPerson39
+Request Channel (control) writing [73](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [73]
+Overhead for request 39: 0 seconds, 123 microseconds
+reply to request 39:73
+Request Channel (control) writing [data TestPerson40](control) done writing.
+Request Channel (control) reads [data TestPerson40]
+ done (control).
+New request is data TestPerson40
+Request Channel (control) writing [21](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [21]
+Overhead for request 40: 0 seconds, 102 microseconds
+reply to request 40:21
+Request Channel (control) writing [data TestPerson41](control) done writing.
+Request Channel (control) reads [data TestPerson41]
+ done (control).
+New request is data TestPerson41
+Request Channel (control) writing [19](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [19]
+Overhead for request 41: 0 seconds, 108 microseconds
+reply to request 41:19
+Request Channel (control) writing [data TestPerson42](control) done writing.
+Request Channel (control) reads [data TestPerson42]
+ done (control).
+New request is data TestPerson42
+Request Channel (control) writing [84](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [84]
+Overhead for request 42: 0 seconds, 119 microseconds
+reply to request 42:84
+Request Channel (control) writing [data TestPerson43](control) done writing.
+Request Channel (control) reads [data TestPerson43]
+ done (control).
+New request is data TestPerson43
+Request Channel (control) writing [37](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [37]
+Overhead for request 43: 0 seconds, 102 microseconds
+reply to request 43:37
+Request Channel (control) writing [data TestPerson44](control) done writing.
+Request Channel (control) reads [data TestPerson44]
+ done (control).
+New request is data TestPerson44
+Request Channel (control) writing [98](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [98]
+Overhead for request 44: 0 seconds, 164 microseconds
+reply to request 44:98
+Request Channel (control) writing [data TestPerson45](control) done writing.
+Request Channel (control) reads [data TestPerson45]
+ done (control).
+New request is data TestPerson45
+Request Channel (control) writing [24](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [24]
+Overhead for request 45: 0 seconds, 128 microseconds
+reply to request 45:24
+Request Channel (control) writing [data TestPerson46](control) done writing.
+Request Channel (control) reads [data TestPerson46]
+ done (control).
+New request is data TestPerson46
+Request Channel (control) writing [15](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [15]
+Overhead for request 46: 0 seconds, 120 microseconds
+reply to request 46:15
+Request Channel (control) writing [data TestPerson47](control) done writing.
+Request Channel (control) reads [data TestPerson47]
+ done (control).
+New request is data TestPerson47
+Request Channel (control) writing [70](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [70]
+Overhead for request 47: 0 seconds, 190 microseconds
+reply to request 47:70
+Request Channel (control) writing [data TestPerson48](control) done writing.
+Request Channel (control) reads [data TestPerson48]
+ done (control).
+New request is data TestPerson48
+Request Channel (control) writing [13](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [13]
+Overhead for request 48: 0 seconds, 327 microseconds
+reply to request 48:13
+Request Channel (control) writing [data TestPerson49](control) done writing.
+Request Channel (control) reads [data TestPerson49]
+ done (control).
+New request is data TestPerson49
+Request Channel (control) writing [26](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [26]
+Overhead for request 49: 0 seconds, 127 microseconds
+reply to request 49:26
+Request Channel (control) writing [data TestPerson50](control) done writing.
+Request Channel (control) reads [data TestPerson50]
+ done (control).
+New request is data TestPerson50
+Request Channel (control) writing [91](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [91]
+Overhead for request 50: 0 seconds, 114 microseconds
+reply to request 50:91
+Request Channel (control) writing [data TestPerson51](control) done writing.
+Request Channel (control) reads [data TestPerson51]
+ done (control).
+New request is data TestPerson51
+Request Channel (control) writing [80](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [80]
+Overhead for request 51: 0 seconds, 118 microseconds
+reply to request 51:80
+Request Channel (control) writing [data TestPerson52](control) done writing.
+Request Channel (control) reads [data TestPerson52]
+ done (control).
+New request is data TestPerson52
+Request Channel (control) writing [56](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [56]
+Overhead for request 52: 0 seconds, 114 microseconds
+reply to request 52:56
+Request Channel (control) writing [data TestPerson53](control) done writing.
+Request Channel (control) reads [data TestPerson53]
+ done (control).
+New request is data TestPerson53
+Request Channel (control) writing [73](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [73]
+Overhead for request 53: 0 seconds, 111 microseconds
+reply to request 53:73
+Request Channel (control) writing [data TestPerson54](control) done writing.
+Request Channel (control) reads [data TestPerson54]
+ done (control).
+New request is data TestPerson54
+Request Channel (control) writing [62](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [62]
+Overhead for request 54: 0 seconds, 113 microseconds
+reply to request 54:62
+Request Channel (control) writing [data TestPerson55](control) done writing.
+Request Channel (control) reads [data TestPerson55]
+ done (control).
+New request is data TestPerson55
+Request Channel (control) writing [70](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [70]
+Overhead for request 55: 0 seconds, 113 microseconds
+reply to request 55:70
+Request Channel (control) writing [data TestPerson56](control) done writing.
+Request Channel (control) reads [data TestPerson56]
+ done (control).
+New request is data TestPerson56
+Request Channel (control) writing [96](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [96]
+Overhead for request 56: 0 seconds, 110 microseconds
+reply to request 56:96
+Request Channel (control) writing [data TestPerson57](control) done writing.
+Request Channel (control) reads [data TestPerson57]
+ done (control).
+New request is data TestPerson57
+Request Channel (control) writing [81](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [81]
+Overhead for request 57: 0 seconds, 149 microseconds
+reply to request 57:81
+Request Channel (control) writing [data TestPerson58](control) done writing.
+Request Channel (control) reads [data TestPerson58]
+ done (control).
+New request is data TestPerson58
+Request Channel (control) writing [5](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [5]
+Overhead for request 58: 0 seconds, 106 microseconds
+reply to request 58:5
+Request Channel (control) writing [data TestPerson59](control) done writing.
+Request Channel (control) reads [data TestPerson59]
+ done (control).
+New request is data TestPerson59
+Request Channel (control) writing [25](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [25]
+Overhead for request 59: 0 seconds, 114 microseconds
+reply to request 59:25
+Request Channel (control) writing [data TestPerson60](control) done writing.
+Request Channel (control) reads [data TestPerson60]
+ done (control).
+New request is data TestPerson60
+Request Channel (control) writing [84](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [84]
+Overhead for request 60: 0 seconds, 102 microseconds
+reply to request 60:84
+Request Channel (control) writing [data TestPerson61](control) done writing.
+Request Channel (control) reads [data TestPerson61]
+ done (control).
+New request is data TestPerson61
+Request Channel (control) writing [27](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [27]
+Overhead for request 61: 0 seconds, 111 microseconds
+reply to request 61:27
+Request Channel (control) writing [data TestPerson62](control) done writing.
+Request Channel (control) reads [data TestPerson62]
+ done (control).
+New request is data TestPerson62
+Request Channel (control) writing [36](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [36]
+Overhead for request 62: 0 seconds, 107 microseconds
+reply to request 62:36
+Request Channel (control) writing [data TestPerson63](control) done writing.
+Request Channel (control) reads [data TestPerson63]
+ done (control).
+New request is data TestPerson63
+Request Channel (control) writing [5](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [5]
+Overhead for request 63: 0 seconds, 118 microseconds
+reply to request 63:5
+Request Channel (control) writing [data TestPerson64](control) done writing.
+Request Channel (control) reads [data TestPerson64]
+ done (control).
+New request is data TestPerson64
+Request Channel (control) writing [46](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [46]
+Overhead for request 64: 0 seconds, 105 microseconds
+reply to request 64:46
+Request Channel (control) writing [data TestPerson65](control) done writing.
+Request Channel (control) reads [data TestPerson65]
+ done (control).
+New request is data TestPerson65
+Request Channel (control) writing [29](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [29]
+Overhead for request 65: 0 seconds, 102 microseconds
+reply to request 65:29
+Request Channel (control) writing [data TestPerson66](control) done writing.
+Request Channel (control) reads [data TestPerson66]
+ done (control).
+New request is data TestPerson66
+Request Channel (control) writing [13](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [13]
+Overhead for request 66: 0 seconds, 316 microseconds
+reply to request 66:13
+Request Channel (control) writing [data TestPerson67](control) done writing.
+Request Channel (control) reads [data TestPerson67]
+ done (control).
+New request is data TestPerson67
+Request Channel (control) writing [57](control) done writing.
+Request Channel (control) reads [57]
+Reading next request from channel (control) ...Overhead for request 67: 0 seconds, 136 microseconds
+reply to request 67:57
+Request Channel (control) writing [data TestPerson68](control) done writing.
+Request Channel (control) reads [data TestPerson68]
+ done (control).
+New request is data TestPerson68
+Request Channel (control) writing [24](control) done writing.
+Request Channel (control) reads [24]
+Reading next request from channel (control) ...Overhead for request 68: 0 seconds, 93 microseconds
+reply to request 68:24
+Request Channel (control) writing [data TestPerson69](control) done writing.
+Request Channel (control) reads [data TestPerson69]
+ done (control).
+New request is data TestPerson69
+Request Channel (control) writing [95](control) done writing.
+Request Channel (control) reads [95]
+Reading next request from channel (control) ...Overhead for request 69: 0 seconds, 89 microseconds
+reply to request 69:95
+Request Channel (control) writing [data TestPerson70](control) done writing.
+Request Channel (control) reads [data TestPerson70]
+ done (control).
+New request is data TestPerson70
+Request Channel (control) writing [82](control) done writing.
+Request Channel (control) reads [82]
+Reading next request from channel (control) ...Overhead for request 70: 0 seconds, 87 microseconds
+reply to request 70:82
+Request Channel (control) writing [data TestPerson71](control) done writing.
+Request Channel (control) reads [data TestPerson71]
+ done (control).
+New request is data TestPerson71
+Request Channel (control) reads [45]
+Request Channel (control) writing [45](control) done writing.
+Overhead for request 71: 0 seconds, 82 microseconds
+Reading next request from channel (control) ...reply to request 71:45
+Request Channel (control) writing [data TestPerson72](control) done writing.
+Request Channel (control) reads [data TestPerson72]
+ done (control).
+New request is data TestPerson72
+Request Channel (control) writing [14](control) done writing.
+Request Channel (control) reads [14]
+Reading next request from channel (control) ...Overhead for request 72: 0 seconds, 91 microseconds
+reply to request 72:14
+Request Channel (control) writing [data TestPerson73](control) done writing.
+Request Channel (control) reads [data TestPerson73]
+ done (control).
+New request is data TestPerson73
+Request Channel (control) writing [67](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [67]
+Overhead for request 73: 0 seconds, 143 microseconds
+reply to request 73:67
+Request Channel (control) writing [data TestPerson74](control) done writing.
+Request Channel (control) reads [data TestPerson74]
+ done (control).
+New request is data TestPerson74
+Request Channel (control) writing [34](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [34]
+Overhead for request 74: 0 seconds, 479 microseconds
+reply to request 74:34
+Request Channel (control) writing [data TestPerson75](control) done writing.
+Request Channel (control) reads [data TestPerson75]
+ done (control).
+New request is data TestPerson75
+Request Channel (control) writing [64](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [64]
+Overhead for request 75: 0 seconds, 397 microseconds
+reply to request 75:64
+Request Channel (control) writing [data TestPerson76](control) done writing.
+Request Channel (control) reads [data TestPerson76]
+ done (control).
+New request is data TestPerson76
+Request Channel (control) writing [43](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [43]
+Overhead for request 76: 0 seconds, 128 microseconds
+reply to request 76:43
+Request Channel (control) writing [data TestPerson77](control) done writing.
+Request Channel (control) reads [data TestPerson77]
+ done (control).
+New request is data TestPerson77
+Request Channel (control) writing [50](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [50]
+Overhead for request 77: 0 seconds, 110 microseconds
+reply to request 77:50
+Request Channel (control) writing [data TestPerson78](control) done writing.
+Request Channel (control) reads [data TestPerson78]
+ done (control).
+New request is data TestPerson78
+Request Channel (control) writing [87](control) done writing.
+Request Channel (control) reads [87]
+Reading next request from channel (control) ...Overhead for request 78: 0 seconds, 130 microseconds
+reply to request 78:87
+Request Channel (control) writing [data TestPerson79](control) done writing.
+Request Channel (control) reads [data TestPerson79]
+ done (control).
+New request is data TestPerson79
+Request Channel (control) reads [8]
+Request Channel (control) writing [8](control) done writing.
+Overhead for request 79: 0 seconds, 94 microseconds
+Reading next request from channel (control) ...reply to request 79:8
+Request Channel (control) writing [data TestPerson80](control) done writing.
+Request Channel (control) reads [data TestPerson80]
+ done (control).
+New request is data TestPerson80
+Request Channel (control) writing [76](control) done writing.
+Request Channel (control) reads [76]
+Reading next request from channel (control) ...Overhead for request 80: 0 seconds, 85 microseconds
+reply to request 80:76
+Request Channel (control) writing [data TestPerson81](control) done writing.
+Request Channel (control) reads [data TestPerson81]
+ done (control).
+New request is data TestPerson81
+Request Channel (control) writing [78](control) done writing.
+Request Channel (control) reads [78]
+Reading next request from channel (control) ...Overhead for request 81: 0 seconds, 85 microseconds
+reply to request 81:78
+Request Channel (control) writing [data TestPerson82](control) done writing.
+Request Channel (control) reads [data TestPerson82]
+ done (control).
+New request is data TestPerson82
+Request Channel (control) writing [88](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [88]
+Overhead for request 82: 0 seconds, 121 microseconds
+reply to request 82:88
+Request Channel (control) writing [data TestPerson83](control) done writing.
+Request Channel (control) reads [data TestPerson83]
+ done (control).
+New request is data TestPerson83
+Request Channel (control) writing [84](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [84]
+Overhead for request 83: 0 seconds, 172 microseconds
+reply to request 83:84
+Request Channel (control) writing [data TestPerson84](control) done writing.
+Request Channel (control) reads [data TestPerson84]
+ done (control).
+New request is data TestPerson84
+Request Channel (control) writing [3](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [3]
+Overhead for request 84: 0 seconds, 116 microseconds
+reply to request 84:3
+Request Channel (control) writing [data TestPerson85](control) done writing.
+Request Channel (control) reads [data TestPerson85]
+ done (control).
+New request is data TestPerson85
+Request Channel (control) writing [51](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [51]
+Overhead for request 85: 0 seconds, 103 microseconds
+reply to request 85:51
+Request Channel (control) writing [data TestPerson86](control) done writing.
+Request Channel (control) reads [data TestPerson86]
+ done (control).
+New request is data TestPerson86
+Request Channel (control) writing [54](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [54]
+Overhead for request 86: 0 seconds, 101 microseconds
+reply to request 86:54
+Request Channel (control) writing [data TestPerson87](control) done writing.
+Request Channel (control) reads [data TestPerson87]
+ done (control).
+New request is data TestPerson87
+Request Channel (control) writing [99](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [99]
+Overhead for request 87: 0 seconds, 118 microseconds
+reply to request 87:99
+Request Channel (control) writing [data TestPerson88](control) done writing.
+Request Channel (control) reads [data TestPerson88]
+ done (control).
+New request is data TestPerson88
+Request Channel (control) writing [32](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [32]
+Overhead for request 88: 0 seconds, 122 microseconds
+reply to request 88:32
+Request Channel (control) writing [data TestPerson89](control) done writing.
+Request Channel (control) reads [data TestPerson89]
+ done (control).
+New request is data TestPerson89
+Request Channel (control) writing [60](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [60]
+Overhead for request 89: 0 seconds, 120 microseconds
+reply to request 89:60
+Request Channel (control) writing [data TestPerson90](control) done writing.
+Request Channel (control) reads [data TestPerson90]
+ done (control).
+New request is data TestPerson90
+Request Channel (control) writing [76](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [76]
+Overhead for request 90: 0 seconds, 108 microseconds
+reply to request 90:76
+Request Channel (control) writing [data TestPerson91](control) done writing.
+Request Channel (control) reads [data TestPerson91]
+ done (control).
+New request is data TestPerson91
+Request Channel (control) writing [68](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [68]
+Overhead for request 91: 0 seconds, 119 microseconds
+reply to request 91:68
+Request Channel (control) writing [data TestPerson92](control) done writing.
+Request Channel (control) reads [data TestPerson92]
+ done (control).
+New request is data TestPerson92
+Request Channel (control) writing [39](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [39]
+Overhead for request 92: 0 seconds, 120 microseconds
+reply to request 92:39
+Request Channel (control) writing [data TestPerson93](control) done writing.
+Request Channel (control) reads [data TestPerson93]
+ done (control).
+New request is data TestPerson93
+Request Channel (control) writing [12](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [12]
+Overhead for request 93: 0 seconds, 127 microseconds
+reply to request 93:12
+Request Channel (control) writing [data TestPerson94](control) done writing.
+Request Channel (control) reads [data TestPerson94]
+ done (control).
+New request is data TestPerson94
+Request Channel (control) writing [26](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [26]
+Overhead for request 94: 0 seconds, 111 microseconds
+reply to request 94:26
+Request Channel (control) writing [data TestPerson95](control) done writing.
+Request Channel (control) reads [data TestPerson95]
+ done (control).
+New request is data TestPerson95
+Request Channel (control) writing [86](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [86]
+Overhead for request 95: 0 seconds, 101 microseconds
+reply to request 95:86
+Request Channel (control) writing [data TestPerson96](control) done writing.
+Request Channel (control) reads [data TestPerson96]
+ done (control).
+New request is data TestPerson96
+Request Channel (control) writing [94](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [94]
+Overhead for request 96: 0 seconds, 121 microseconds
+reply to request 96:94
+Request Channel (control) writing [data TestPerson97](control) done writing.
+Request Channel (control) reads [data TestPerson97]
+ done (control).
+New request is data TestPerson97
+Request Channel (control) writing [39](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [39]
+Overhead for request 97: 0 seconds, 100 microseconds
+reply to request 97:39
+Request Channel (control) writing [data TestPerson98](control) done writing.
+Request Channel (control) reads [data TestPerson98]
+ done (control).
+New request is data TestPerson98
+Request Channel (control) writing [95](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [95]
+Overhead for request 98: 0 seconds, 114 microseconds
+reply to request 98:95
+Request Channel (control) writing [data TestPerson99](control) done writing.
+Request Channel (control) reads [data TestPerson99]
+ done (control).
+New request is data TestPerson99
+Request Channel (control) writing [70](control) done writing.
+Reading next request from channel (control) ...Request Channel (control) reads [70]
+Overhead for request 99: 0 seconds, 107 microseconds
+reply to request 99:70
+Request Channel (control) writing [quit](control) done writing.
+Request Channel (control) reads [quit]
+ done (control).
+New request is quit
+Request Channel (control) writing [bye](control) done writing.
+Request Channel (control) reads [bye]
+Reply to request 'quit' is 'bye
+closing request channel 'control'...
+done closing request channel 'control'
+Local overhead for generate_data()
+Overhead for call 0: 0 seconds, 7 microseconds
+Overhead for call 1: 0 seconds, 2 microseconds
+Overhead for call 2: 0 seconds, 1 microseconds
+Overhead for call 3: 0 seconds, 1 microseconds
+Overhead for call 4: 0 seconds, 2 microseconds
+Overhead for call 5: 0 seconds, 2 microseconds
+Overhead for call 6: 0 seconds, 2 microseconds
+Overhead for call 7: 0 seconds, 2 microseconds
+Overhead for call 8: 0 seconds, 2 microseconds
+Overhead for call 9: 0 seconds, 2 microseconds
+Overhead for call 10: 0 seconds, 1 microseconds
+Overhead for call 11: 0 seconds, 2 microseconds
+Overhead for call 12: 0 seconds, 2 microseconds
+Overhead for call 13: 0 seconds, 2 microseconds
+Overhead for call 14: 0 seconds, 1 microseconds
+Overhead for call 15: 0 seconds, 2 microseconds
+Overhead for call 16: 0 seconds, 2 microseconds
+Overhead for call 17: 0 seconds, 2 microseconds
+Overhead for call 18: 0 seconds, 2 microseconds
+Overhead for call 19: 0 seconds, 2 microseconds
+Overhead for call 20: 0 seconds, 1 microseconds
+Overhead for call 21: 0 seconds, 2 microseconds
+Overhead for call 22: 0 seconds, 2 microseconds
+Overhead for call 23: 0 seconds, 1 microseconds
+Overhead for call 24: 0 seconds, 1 microseconds
+Overhead for call 25: 0 seconds, 2 microseconds
+Overhead for call 26: 0 seconds, 2 microseconds
+Overhead for call 27: 0 seconds, 2 microseconds
+Overhead for call 28: 0 seconds, 2 microseconds
+Overhead for call 29: 0 seconds, 2 microseconds
+Overhead for call 30: 0 seconds, 2 microseconds
+Overhead for call 31: 0 seconds, 2 microseconds
+Overhead for call 32: 0 seconds, 2 microseconds
+Overhead for call 33: 0 seconds, 2 microseconds
+Overhead for call 34: 0 seconds, 2 microseconds
+Overhead for call 35: 0 seconds, 1 microseconds
+Overhead for call 36: 0 seconds, 1 microseconds
+Overhead for call 37: 0 seconds, 2 microseconds
+Overhead for call 38: 0 seconds, 2 microseconds
+Overhead for call 39: 0 seconds, 2 microseconds
+Overhead for call 40: 0 seconds, 2 microseconds
+Overhead for call 41: 0 seconds, 2 microseconds
+Overhead for call 42: 0 seconds, 2 microseconds
+Overhead for call 43: 0 seconds, 1 microseconds
+Overhead for call 44: 0 seconds, 2 microseconds
+Overhead for call 45: 0 seconds, 2 microseconds
+Overhead for call 46: 0 seconds, 1 microseconds
+Overhead for call 47: 0 seconds, 2 microseconds
+Overhead for call 48: 0 seconds, 2 microseconds
+Overhead for call 49: 0 seconds, 2 microseconds
+Overhead for call 50: 0 seconds, 2 microseconds
+Overhead for call 51: 0 seconds, 2 microseconds
+Overhead for call 52: 0 seconds, 2 microseconds
+Overhead for call 53: 0 seconds, 2 microseconds
+Overhead for call 54: 0 seconds, 2 microseconds
+Overhead for call 55: 0 seconds, 2 microseconds
+Overhead for call 56: 0 seconds, 2 microseconds
+Overhead for call 57: 0 seconds, 2 microseconds
+Overhead for call 58: 0 seconds, 2 microseconds
+Overhead for call 59: 0 seconds, 2 microseconds
+Overhead for call 60: 0 seconds, 2 microseconds
+Overhead for call 61: 0 seconds, 2 microseconds
+Overhead for call 62: 0 seconds, 2 microseconds
+Overhead for call 63: 0 seconds, 2 microseconds
+Overhead for call 64: 0 seconds, 2 microseconds
+Overhead for call 65: 0 seconds, 2 microseconds
+Overhead for call 66: 0 seconds, 2 microseconds
+Overhead for call 67: 0 seconds, 2 microseconds
+Overhead for call 68: 0 seconds, 2 microseconds
+Overhead for call 69: 0 seconds, 2 microseconds
+Overhead for call 70: 0 seconds, 2 microseconds
+Overhead for call 71: 0 seconds, 2 microseconds
+Overhead for call 72: 0 seconds, 2 microseconds
+Overhead for call 73: 0 seconds, 2 microseconds
+Overhead for call 74: 0 seconds, 1 microseconds
+Overhead for call 75: 0 seconds, 1 microseconds
+Overhead for call 76: 0 seconds, 1 microseconds
+Overhead for call 77: 0 seconds, 1 microseconds
+Overhead for call 78: 0 seconds, 1 microseconds
+Overhead for call 79: 0 seconds, 1 microseconds
+Overhead for call 80: 0 seconds, 1 microseconds
+Overhead for call 81: 0 seconds, 2 microseconds
+Overhead for call 82: 0 seconds, 2 microseconds
+Overhead for call 83: 0 seconds, 1 microseconds
+Overhead for call 84: 0 seconds, 2 microseconds
+Overhead for call 85: 0 seconds, 1 microseconds
+Overhead for call 86: 0 seconds, 1 microseconds
+Overhead for call 87: 0 seconds, 2 microseconds
+Overhead for call 88: 0 seconds, 2 microseconds
+Overhead for call 89: 0 seconds, 1 microseconds
+Overhead for call 90: 0 seconds, 1 microseconds
+Overhead for call 91: 0 seconds, 2 microseconds
+Overhead for call 92: 0 seconds, 2 microseconds
+Overhead for call 93: 0 seconds, 1 microseconds
+Overhead for call 94: 0 seconds, 1 microseconds
+Overhead for call 95: 0 seconds, 1 microseconds
+Overhead for call 96: 0 seconds, 1 microseconds
+Overhead for call 97: 0 seconds, 2 microseconds
+Overhead for call 98: 0 seconds, 1 microseconds
+Overhead for call 99: 0 seconds, 2 microseconds
+closing request channel 'control'...
+closing IPC mechanisms on server side for channel 'control'...
+rqname = fifo_control2
+rqname = fifo_control1
+done closing IPC mechanisms on server side for channel 'control'
+done closing request channel 'control'

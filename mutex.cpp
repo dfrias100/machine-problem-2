@@ -50,17 +50,17 @@
 /*--------------------------------------------------------------------------*/
 
 Mutex::Mutex() {
-
+    m = PTHREAD_MUTEX_INITIALIZER;
 }
 
 Mutex::~Mutex() {
-
+    /* No code needed. */
 }
 
 void Mutex::Lock() {
-
+    pthread_mutex_lock(&m);
 }
 
 void Mutex::Unlock() {
-
+    pthread_mutex_unlock(&m);
 }

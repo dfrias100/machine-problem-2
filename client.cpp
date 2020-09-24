@@ -25,6 +25,7 @@
 #include <sstream>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <sys/time.h>
 
 #include <errno.h>
 #include <unistd.h>
@@ -59,11 +60,24 @@ std::string int2string(int number) {
    return ss.str();//return a string with the contents of the stream
 }
 
+/*-----------------------------------------------------------------------------------------*/
+/* LOCAL FUNCTIONS -- GENERATE THE DATA (Borrowed from dataserver.cpp to measure overhead )*/
+/*-----------------------------------------------------------------------------------------*/
+
+std::string generate_data() {
+  // Generate the data to be returned to the client.
+  return int2string(rand() % 100);
+}
+
 /*--------------------------------------------------------------------------*/
 /* MAIN FUNCTION */
 /*--------------------------------------------------------------------------*/
 
 int main(int argc, char * argv[]) {
+  struct timeval t1;
+  struct timeval t2;
+  long diff_sec;
+  long diff_usec;
 
   std::cout << "CLIENT STARTED:" << std::endl;
 
@@ -87,12 +101,37 @@ int main(int argc, char * argv[]) {
 
     for(int i = 0; i < 100; i++) {
       std::string request_string("data TestPerson" + int2string(i));
+      
+      gettimeofday(&t1, 0);
       std::string reply_string = chan.send_request(request_string);
+      gettimeofday(&t2, 0);
+      diff_sec = t2.tv_sec - t1.tv_sec;
+      diff_usec = t2.tv_usec - t1.tv_usec;
+      if(diff_usec < 0) {
+        diff_usec += 1000000;
+        diff_sec--;
+      }
+      std::cout << "Overhead for request " << i << ": " << diff_sec << " seconds, " << diff_usec << " microseconds" << std::endl;
+      
       std::cout << "reply to request " << i << ":" << reply_string << std::endl;;
     }
  
     std::string reply4 = chan.send_request("quit");
     std::cout << "Reply to request 'quit' is '" << reply4 << std::endl;
+  }
+
+  std::cout << "Local overhead for generate_data()" << std::endl;
+  for(int i = 0; i < 100; i++) {
+      gettimeofday(&t1, 0);
+      std::string d = generate_data();
+      gettimeofday(&t2, 0);
+      diff_sec = t2.tv_sec - t1.tv_sec;
+      diff_usec = t2.tv_usec - t1.tv_usec;
+      if(diff_usec < 0) {
+        diff_usec += 1000000;
+        diff_sec--;
+      }
+      std::cout << "Overhead for call " << i << ": " << diff_sec << " seconds, " << diff_usec << " microseconds" << std::endl;
   }
 
   usleep(1000000);
