@@ -1,12 +1,12 @@
 /* 
-    File: simpleclient.cpp
+    File: client.cpp
 
-    Author: R. Bettati
+    Author: Daniel Frias
             Department of Computer Science
             Texas A&M University
-    Date  : 2019/09/23
+    Date  : 2020/09/24
 
-    Simple client main program for MP2 in CSCE 313
+    Client main program for MP2 in CSCE 313, derived from simpleclient.cpp
 */
 
 /*--------------------------------------------------------------------------*/
