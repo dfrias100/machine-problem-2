@@ -78,6 +78,8 @@ int main(int argc, char * argv[]) {
   struct timeval t2;
   long diff_sec;
   long diff_usec;
+  // File to hold the data for overhead
+  std::ofstream fout;
 
   std::cout << "CLIENT STARTED:" << std::endl;
 
@@ -99,6 +101,8 @@ int main(int argc, char * argv[]) {
     std::string reply3 = chan.send_request("data Jane Smith");
     std::cout << "Reply to request 'data Jane Smith' is '" << reply3 << "'" << std::endl;
 
+    fout.open("data1.csv");
+
     for(int i = 0; i < 100; i++) {
       std::string request_string("data TestPerson" + int2string(i));
       
@@ -111,14 +115,18 @@ int main(int argc, char * argv[]) {
         diff_usec += 1000000;
         diff_sec--;
       }
-      std::cout << "Overhead for request " << i << ": " << diff_sec << " seconds, " << diff_usec << " microseconds" << std::endl;
-      
+      // This will output to data1.csv
+      fout << diff_sec*1e6 + diff_usec << std::endl;
       std::cout << "reply to request " << i << ":" << reply_string << std::endl;;
     }
- 
+
+    fout.close();
+
     std::string reply4 = chan.send_request("quit");
     std::cout << "Reply to request 'quit' is '" << reply4 << std::endl;
   }
+
+  fout.open("data2.csv");
 
   std::cout << "Local overhead for generate_data()" << std::endl;
   for(int i = 0; i < 100; i++) {
@@ -131,8 +139,11 @@ int main(int argc, char * argv[]) {
         diff_usec += 1000000;
         diff_sec--;
       }
-      std::cout << "Overhead for call " << i << ": " << diff_sec << " seconds, " << diff_usec << " microseconds" << std::endl;
+      // This will output to data2.csv
+      fout << diff_sec*1000000 + diff_usec << std::endl;
   }
+
+  fout.close();
 
   usleep(1000000);
 }
