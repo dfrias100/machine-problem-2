@@ -78,6 +78,7 @@ int main(int argc, char * argv[]) {
   struct timeval t2;
   long diff_sec;
   long diff_usec;
+  long total = 0;
   // File to hold the data for overhead
   std::ofstream fout;
 
@@ -102,22 +103,28 @@ int main(int argc, char * argv[]) {
     std::cout << "Reply to request 'data Jane Smith' is '" << reply3 << "'" << std::endl;
 
     fout.open("data1.csv");
-
-    for(int i = 0; i < 100; i++) {
-      std::string request_string("data TestPerson" + int2string(i));
-      
-      gettimeofday(&t1, 0);
-      std::string reply_string = chan.send_request(request_string);
-      gettimeofday(&t2, 0);
-      diff_sec = t2.tv_sec - t1.tv_sec;
-      diff_usec = t2.tv_usec - t1.tv_usec;
-      if(diff_usec < 0) {
-        diff_usec += 1000000;
-        diff_sec--;
+    
+    for (int i = 0; i < 30; i++) {
+      for(int i = 0; i < 100; i++) {
+        std::string request_string("data TestPerson" + int2string(i));
+        
+        gettimeofday(&t1, 0);
+        std::string reply_string = chan.send_request(request_string);
+        gettimeofday(&t2, 0);
+        diff_sec = t2.tv_sec - t1.tv_sec;
+        diff_usec = t2.tv_usec - t1.tv_usec;
+        if(diff_usec < 0) {
+          diff_usec += 1000000;
+          diff_sec--;
+        }
+        // This will output to data1.csv
+        total += diff_sec*1000000 + diff_usec;
+        //fout << diff_sec*1e6 + diff_usec << std::endl;
+        std::cout << "reply to request " << i << ":" << reply_string << std::endl;;
       }
-      // This will output to data1.csv
-      fout << diff_sec*1e6 + diff_usec << std::endl;
-      std::cout << "reply to request " << i << ":" << reply_string << std::endl;;
+      double mean = total / 100.0;
+      fout << mean << std::endl;
+      total = 0;
     }
 
     fout.close();
@@ -129,18 +136,23 @@ int main(int argc, char * argv[]) {
   fout.open("data2.csv");
 
   std::cout << "Local overhead for generate_data()" << std::endl;
-  for(int i = 0; i < 100; i++) {
-      gettimeofday(&t1, 0);
-      std::string d = generate_data();
-      gettimeofday(&t2, 0);
-      diff_sec = t2.tv_sec - t1.tv_sec;
-      diff_usec = t2.tv_usec - t1.tv_usec;
-      if(diff_usec < 0) {
-        diff_usec += 1000000;
-        diff_sec--;
-      }
-      // This will output to data2.csv
-      fout << diff_sec*1000000 + diff_usec << std::endl;
+  for (int i = 0; i < 30; i++) {
+    for(int i = 0; i < 100; i++) {
+        gettimeofday(&t1, 0);
+        std::string d = generate_data();
+        gettimeofday(&t2, 0);
+        diff_sec = t2.tv_sec - t1.tv_sec;
+        diff_usec = t2.tv_usec - t1.tv_usec;
+        if(diff_usec < 0) {
+          diff_usec += 1000000;
+          diff_sec--;
+        }
+        // This will output to data2.csv
+        total += diff_sec*1000000 + diff_usec;
+    }
+    double mean = total / 100.0;
+    fout << mean << std::endl;
+    total = 0;
   }
 
   fout.close();
